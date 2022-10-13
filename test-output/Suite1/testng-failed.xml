@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="browserName" value="ie"/>
+  <test name="TestonFirefox(failed)" parallel="tests">
+    <parameter name="browserName" value="firfox"/>
+    <classes>
+      <class name="Excelutil.MultipleBrowsersopen">
+        <methods>
+          <include name="close"/>
+          <include name="test1"/>
+          <include name="setpu"/>
+          <include name="setpu"/>
+          <include name="setpu"/>
+        </methods>
+      </class> <!-- Excelutil.MultipleBrowsersopen -->
+    </classes>
+  </test> <!-- TestonFirefox(failed) -->
+  <test name="TestonChrome(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="Excelutil.MultipleBrowsersopen">
+        <methods>
+          <include name="close"/>
+          <include name="test1"/>
+          <include name="setpu"/>
+          <include name="setpu"/>
+          <include name="setpu"/>
+        </methods>
+      </class> <!-- Excelutil.MultipleBrowsersopen -->
+    </classes>
+  </test> <!-- TestonChrome(failed) -->
+  <test name="TestonIE(failed)" parallel="tests">
+    <parameter name="browserName" value="ie"/>
+    <classes>
+      <class name="Excelutil.MultipleBrowsersopen">
+        <methods>
+          <include name="close"/>
+          <include name="test1"/>
+          <include name="setpu"/>
+          <include name="setpu"/>
+          <include name="setpu"/>
+        </methods>
+      </class> <!-- Excelutil.MultipleBrowsersopen -->
+    </classes>
+  </test> <!-- TestonIE(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
